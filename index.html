@@ -274,14 +274,14 @@ Skip to content</a>
     <div class="container">
       <div class="row">
         <div id="text-3" class="col-md-3 col-sm-6 rotateInDownLeft animated ta-widget widget_text"><h6>Address</h6>			<div class="textwidget"><ul>
-<li>172 Jalan Bungapekan,42700 Banting,Selangor,Malaysia.</li>
+<li>172 First Floor, Jalan Bunga Pekan, 42700, Banting, Selangor, Malaysia.</li>
 </ul>
 <p><audio style="display: none;" controls="controls"></audio></p>
 <p><audio style="display: none;" controls="controls"></audio></p>
 </div>
 		</div><div id="text-4" class="col-md-3 col-sm-6 rotateInDownLeft animated ta-widget widget_text"><h6>Contact</h6>			<div class="textwidget"><ul>
 <li>Email: support@mukerglobal.com</li>
-<li>Phone: +60182064248 (Mon-Sun) +60331870896 (Mon-Sat)</li>
+<li>Phone: +60182064248 (Mon-Sun) </li>
 </ul>
 <p><audio style="display: none;" controls="controls"></audio></p>
 </div>
@@ -292,7 +292,8 @@ Skip to content</a>
     <button type="submit" class="btn"> <i class="fa fa-search"></i> </button>
     </span> </div>
 </form>
-</div><div id="calendar-3" class="col-md-3 col-sm-6 rotateInDownLeft animated ta-widget widget_calendar"><div id="calendar_wrap" class="calendar_wrap"><table id="wp-calendar">
+</div>
+	      <div style="display:none;" id="calendar-3" class="col-md-3 col-sm-6 rotateInDownLeft animated ta-widget widget_calendar"><div id="calendar_wrap" class="calendar_wrap"><table id="wp-calendar">
 	<caption>2021年二月</caption>
 	<thead>
 	<tr>
@@ -335,7 +336,7 @@ Skip to content</a>
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-			<p>© Copyright 2017-2021 by <a href="#">Muker Global SDN BHD</a>. All Rights Reserved. </p>		</div>
+			<p>© Copyright 2017-<span id="footerYear">2021</span> by <a href="#">Muker Global SDN BHD</a>. All Rights Reserved. </p>		</div>
         <div class="col-md-6 text-right">
                     <ul class="ta-social">
                                    <li><span class="icon-soci"><a href="javascript:;" target='_blank'><i class="fa fa-facebook"></i></a></span></li>
@@ -359,5 +360,8 @@ var wpcf7 = {"apiSettings":{"root":"https:\/\/mukerglobal.com\/wp-json\/contact-
 </script>
 <script type='text/javascript' src='static/js/scripts-5.1.1.js'></script>
 <script type='text/javascript' src='static/js/wp-embed.min-5.1.8.js'></script>
+<script type="text/javascript">
+document.getElementById('footerYear').innerHTML = new Date().getFullYear() + '';
+</script>
 </body>
 </html>
